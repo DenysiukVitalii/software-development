@@ -15,9 +15,7 @@ class Stack {
     }
 
     peek() {
-        if (this.top) {
-            return this.top.data;
-        }
+       return this.top.data;
     }
 
     push(data) {
@@ -27,11 +25,9 @@ class Stack {
     }
 
     pop() {
-        if (this.top) {
-            let data = this.top.data;
-            this.top = this.top.next;
-            return data;
-        }
+        let data = this.top.data;
+        this.top = this.top.next;
+        return data;
     }
 }
 
